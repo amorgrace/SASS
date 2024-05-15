@@ -1,0 +1,107 @@
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: white;
+    z-index: 1;
+
+    
+
+    .logo {
+        box-sizing: border-box;
+        color: black;
+        font-weight: bold;
+        font-size:x-large;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        //margin-top: 10px;
+        //margin-bottom: 3rem;
+        padding-right: 20rem;
+        padding-left: 100px;
+        
+        //margin-bottom: 10rem;
+    }
+    
+
+}
+
+
+.left-nav {
+    margin-right: 15rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    li {
+        display: inline;
+        a {
+            padding: 20px;
+            color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    }
+}
+.left-png {
+    width: 10px;
+    margin-right: 10px;    
+}
+
+.nav-icons{
+    //padding-top: 20px;
+    margin-right: 1.59rem;
+    
+    a {
+        padding: 40px;
+        
+        .right-png {
+            width: 20px;
+            
+        }
+    }
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35vw;
+    height: 100vh;
+    background-color: white;
+    transition: left 5.0s ease;
+    padding-top: 65px;
+    li{
+        display: block;
+        padding-top: 40px;
+        margin-left: 20px;
+        a{
+            font-size: larger;
+        }
+    }
+    
+}
+
+.close-button {
+    margin-top: -18em;
+    width: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+
+// .overlay {
+//     /* position the overlay to cover the entire page */
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     /* add the blur effect */
+//     filter: blur(0px);
+//     transition: filter 0.3s ease-in-out;
+// }
+  
+// .overlay.blur {
+//     filter: blur(5px);
+// }
+  

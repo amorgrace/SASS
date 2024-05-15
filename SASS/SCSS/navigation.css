@@ -1,0 +1,73 @@
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+}
+nav .logo {
+  box-sizing: border-box;
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-right: 20rem;
+  padding-left: 100px;
+}
+
+.left-nav {
+  margin-right: 15rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.left-nav li {
+  display: inline;
+}
+.left-nav li a {
+  padding: 20px;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.left-png {
+  width: 10px;
+  margin-right: 10px;
+}
+
+.nav-icons {
+  margin-right: 1.59rem;
+}
+.nav-icons a {
+  padding: 40px;
+}
+.nav-icons a .right-png {
+  width: 20px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35vw;
+  height: 100vh;
+  background-color: white;
+  transition: left 5s ease;
+  padding-top: 65px;
+}
+.submenu li {
+  display: block;
+  padding-top: 40px;
+  margin-left: 20px;
+}
+.submenu li a {
+  font-size: larger;
+}
+
+.close-button {
+  margin-top: -18em;
+  width: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+}/*# sourceMappingURL=navigation.css.map */

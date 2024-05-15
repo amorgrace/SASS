@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bliss Homepage</title>
+    <link rel="stylesheet" href="/SCSS/index.css">
+</head>
+
+    <!-- NAVIGATION -->
+    <header>
+
+        <nav class="container">
+
+            
+           <ul class="left-nav">
+            <li class="tagg">
+                <a class="menu-trigger" href="#"><img src="/IMG/boxiconsSVG/icons8-menu-16.png" class="left-png" alt="">Menu</a>
+
+                <ul id="submenu" class="submenu">
+                    <!-- <img src="/IMG/boxiconsSVG/close.png" class="close-button"> -->
+                    <li><a href="#">Sub-Items</a></li>
+                    <li><a href="#">Sub-Items</a></li>
+                    <li><a href="#">Sub-Items</a></li>
+                    <li><a href="#">Sub-Items</a></li>
+                </ul>
+            </li>
+
+
+            <li><a  href="#"><img src="/IMG/boxiconsSVG/icons8-plus-24.png" class="left-png" alt="">Contact</a></li>
+            <li><a  href="#">About Us</a></li> 
+           </ul>
+
+
+            <!-- <img src="/IMG/boxiconsSVG/logo.png" class="png-shoe"> -->
+            <a href="#" class="logo">BLISS BY UDDY</a>
+
+
+           <div class="nav-icons">
+            <a href=""><img src="/IMG/boxiconsSVG/search.png" class="right-png" alt=""></a>
+            <a href=""><img src="/IMG/boxiconsSVG/profile.png" class="right-png" alt=""></a>
+            <a href=""><img src="/IMG/boxiconsSVG/cart.png" class="right-png" alt=""></a>
+           </div>
+
+
+        </nav>
+    </header> 
+
+        <!-- END NAVIGATION -->
+
+<body>
+
+    <!-- HERO SECTION -->
+
+    <main>
+        <section  class="hero-container">
+            <a href="#"><h1><span>THE</span> ICONIC BLISS</h1></a>
+            <a href="#"><button class="button-49" role="button">
+                Shop Now!
+            </button></a>
+
+        </section>
+
+    </main>
+    <!-- END HERO -->
+
+    <!-- FEATURED CATEGORIES -->
+
+    <section class="hero-category">
+        <div class="top-hero-cat">
+            <div class="handbags">
+                <div class="cat-info">
+                    <h2 class="hb">SUMMER HANDBAGS</h2>
+                    <a href="#"><button class="info-btn">EXPLORE THE NEW STYLES</button></a>
+                </div>
+
+            </div>
+            <div class="clothings">
+                <div class="cat-info">
+                    <h2 class="cl">NEW CLOTHINGS</h2>
+                    <a href="#"><button class="info-btn">DISCOVER FRESH FASHION</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom-hero-cat">
+            <div class="shoes">
+                <div class="cat-info">
+                    <h2 class="ds">DELUXE SHOES</h2>
+                    <a href="#"><button class="info-btn">NEW TREND HORIZONS</button></a>
+                </div>
+
+            </div>
+            <div class="accessories">
+                <div class="cat-info">
+                    <h2 class="ac">ACCESSORIES</h2>
+                    <a href="#"><button class="info-btn">UNVEIL THE ALLURE</button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <div class="in-focus">
+        <h2> IN FOCUS</h2>
+    </div>
+
+    <section class="card-wrapper">
+        <div class="card">
+            <img class="card-images" src="/IMG/focus/img-11.jpg" alt="">
+            <div class="card-info">
+                <h1>just testing</h1>
+                <span> N20,000</span>
+                <i class="bi bi-heart">ok</i>
+            </div>
+
+        </div>
+        <div class="card">
+            <img class="card-images" src="/IMG/focus/img-2.jpg" alt="">
+            <div class="card-info">
+                <h1>just testing</h1>
+                <span> N20,000</span>
+                <i class="bi bi-heart">ok</i>
+            </div>
+
+        </div>
+        <div class="card">
+            <img class="card-images" src="/IMG/focus/img-3.jpg" alt="">
+            <div class="card-info">
+                <h1>just testing</h1>
+                <span> N20,000</span>
+                <i class="bi bi-heart">ok</i>
+            </div>
+
+        </div>
+        <div class="card">
+            <img class="card-images" src="/IMG/focus/img-4.jpg" alt="">
+            <div class="card-info">
+                <h1>just testing</h1>
+                <span> N20,000</span>
+                <i class="bi bi-heart">ok</i>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var menuTrigger = document.querySelectorAll(".menu-trigger");
+
+  menuTrigger.forEach(function(menuTrigger) {
+    menuTrigger.addEventListener("click", function(e) {
+      e.preventDefault(); // Prevent the default link behavior
+      var submenu = this.nextElementSibling;
+      submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+
+      // Check if the close button already exists
+      var closeButton = submenu.querySelector(".close-button");
+      
+      // If close button doesn't exist, create it
+      if (!closeButton) {
+        closeButton = document.createElement("img");
+        closeButton.src = "/IMG/boxiconsSVG/close.png";
+        closeButton.classList.add("close-button");
+        
+        // Append the close button to the submenu
+        submenu.appendChild(closeButton);
+        
+        // Add a click event listener to the close button
+        closeButton.addEventListener("click", function(e) {
+          e.stopPropagation(); // Prevent the click event from bubbling up to the parent element
+          submenu.style.display = "none";
+        });
+      }
+    });
+  });
+});
+</script>
+
+</html>
